@@ -315,81 +315,6 @@ public class Cactus {
                         'X', CSkin,
                         'Y', Block.cactus
                              });
-        GameRegistry.addRecipe(new ItemStack(CSword, 1),
-                new Object[] { "#", "#", "S",
-                        '#', Block.cactus,
-                        'S', CStick
-                             });
-        GameRegistry.addRecipe(new ItemStack(CHoe, 1),
-                new Object[] { "##", " S", " S",
-                        '#', Block.cactus,
-                        'S', CStick
-                             });
-        GameRegistry.addRecipe(new ItemStack(CAxe, 1),
-                new Object[] { "##", "#S", " S",
-                        '#', Block.cactus,
-                        'S', CStick
-                             });
-        GameRegistry.addRecipe(new ItemStack(CPickaxe, 1),
-                new Object[] { "###", " S ", " S ",
-                        '#', Block.cactus,
-                        'S', CStick
-                             });
-        GameRegistry.addRecipe(new ItemStack(CSpade, 1),
-                new Object[] { "#", "S", "S",
-                        '#', Block.cactus,
-                        'S', CStick
-                             });
-        GameRegistry.addRecipe(new ItemStack(CeraSword, 1),
-                new Object[] { "#", "#", "S",
-                        '#', Ceramic,
-                        'S', Item.stick
-                             });
-        GameRegistry.addRecipe(new ItemStack(CeraHoe, 1),
-                new Object[] { "##", " S", " S",
-                        '#', Ceramic,
-                        'S', Item.stick
-                             });
-        GameRegistry.addRecipe(new ItemStack(CeraAxe, 1),
-                new Object[] { "##", "#S", " S",
-                        '#', Ceramic,
-                        'S', Item.stick
-                             });
-        GameRegistry.addRecipe(new ItemStack(CeraPickaxe, 1),
-                new Object[] { "###", " S ", " S ",
-                        '#', Ceramic,
-                        'S', Item.stick
-                             });
-        GameRegistry.addRecipe(new ItemStack(CeraSpade, 1),
-                new Object[] { "#", "S", "S",
-                        '#', Ceramic,
-                        'S', Item.stick
-                             });
-        GameRegistry.addRecipe(new ItemStack(ReceraSword, 1),
-                new Object[] { "#", "#", "S",
-                        '#', Receramic,
-                        'S', Item.stick
-                             });
-        GameRegistry.addRecipe(new ItemStack(ReceraHoe, 1),
-                new Object[] { "##", " S", " S",
-                        '#', Receramic,
-                        'S', Item.stick
-                             });
-        GameRegistry.addRecipe(new ItemStack(ReceraAxe, 1),
-                new Object[] { "##", "#S", " S",
-                        '#', Receramic,
-                        'S', Item.stick
-                             });
-        GameRegistry.addRecipe(new ItemStack(ReceraPickaxe, 1),
-                new Object[] {"###", " S ", " S ",
-                        '#', Receramic,
-                        'S', Item.stick
-                             });
-        GameRegistry.addRecipe(new ItemStack(ReceraSpade, 1),
-                new Object[] { "#", "S", "S",
-                        '#', Receramic,
-                        'S', Item.stick
-                             });
         GameRegistry.addRecipe(new ItemStack(Block.torchWood, 4),
                 new Object[] { "#", "S",
                         '#', new ItemStack(Item.coal, 1, 0),
@@ -450,6 +375,10 @@ public class Cactus {
         GameRegistry.addSmelting(Block.sandStone.blockID, new ItemStack(Ceramic, 1), 0.7F);
         GameRegistry.addSmelting(Ceramic.itemID, new ItemStack(Receramic, 1), 0.9F);
         GameRegistry.addSmelting(CBlock.blockID, new ItemStack(Cactunium, 1), 1.0F);
+        
+        nnsrRecipe.addToolRecipe(CSword, CAxe, CHoe, CPickaxe, CSpade, Block.cactus, CStick);
+        nnsrRecipe.addToolRecipe(CeraSword, CeraAxe, CeraHoe, CeraPickaxe, CeraSpade, Ceramic, Item.stick);
+        nnsrRecipe.addToolRecipe(ReceraSword, ReceraAxe, ReceraHoe, ReceraPickaxe, ReceraSpade, Receramic, Item.stick);
         
         GameRegistry.registerFuelHandler(new FuelTime());
     }
