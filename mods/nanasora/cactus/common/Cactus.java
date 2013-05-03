@@ -212,7 +212,7 @@ public class Cactus {
         Jelly = new nnsrFoodBase(JellyID - 256, 6, false, "nanasora/cactus/sprites:Jelly", -1, 64, false).setUnlocalizedName("Jelly").setCreativeTab(tabsCactus);
         CCoal = new nnsrItemBase(CCoalID - 256, "coal", 0x228B22, 64, false).setUnlocalizedName("CCoal").setCreativeTab(tabsCactus);
         RCSteak = new nnsrFoodBase(RCSteakID - 256, 4, false, "porkchopRaw", 0x228B22, 64, false).setUnlocalizedName("RCSteak").setCreativeTab(tabsCactus);
-        Cactunium = new nnsrItemBase(CactuniumID - 256, "ingotIron", 0x228B22, 064, false).setUnlocalizedName("Cactunium").setCreativeTab(tabsCactus);
+        Cactunium = new nnsrItemBase(CactuniumID - 256, "ingotIron", 0x228B22, 64, false).setUnlocalizedName("Cactunium").setCreativeTab(tabsCactus);
         CNSword = new nnsrSwordBase(CNSwordID - 256, nnsrToolMaterial.ToolCactunium, "nanasora/cactus/sprites:CNAxe", -1, false).setUnlocalizedName("CNSword").setCreativeTab(tabsCactus);
         CNAxe = new nnsrAxeBase(CNAxeID - 256, nnsrToolMaterial.ToolCactunium, "nanasora/cactus/sprites:CNAxe", -1, false).setUnlocalizedName("CNAxe").setCreativeTab(tabsCactus);
         CNHoe = new nnsrHoeBase(CNHoeID - 256, nnsrToolMaterial.ToolCactunium, "nanasora/cactus/sprites:CNHoe", -1, false).setUnlocalizedName("CNHoe").setCreativeTab(tabsCactus);
