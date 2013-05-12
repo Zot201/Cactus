@@ -33,40 +33,6 @@ public class Cactus {
 	
 	public static final CreativeTabs tabsCactus = new CreativeTabCactus("Cactus!!+");
 
-	public static Block CBlock;
-
-	public static Item CStick;
-	public static Item CSteak;
-	public static Item CSword;
-	public static Item CAxe;
-	public static Item CHoe;
-	public static Item CPickaxe;
-	public static Item CSpade;
-	public static Item CGel;
-	public static Item CStraw;
-	public static Item CSkin;
-	public static Item Ceramic;
-	public static Item Receramic;
-	public static Item CeraSword;
-	public static Item CeraAxe;
-	public static Item CeraHoe;
-	public static Item CeraPickaxe;
-	public static Item CeraSpade;
-	public static Item ReceraSword;
-	public static Item ReceraAxe;
-	public static Item ReceraHoe;
-	public static Item ReceraPickaxe;
-	public static Item ReceraSpade;
-	public static Item Jelly;
-	public static Item CCoal;
-	public static Item RCSteak;
-	public static Item Cactunium;
-	public static Item CNSword;
-	public static Item CNAxe;
-	public static Item CNHoe;
-	public static Item CNPickaxe;
-	public static Item CNSpade;
-
 	public static int CBlockID;
 	public static int CStickID;
 	public static int CSteakID;
@@ -187,92 +153,92 @@ public class Cactus {
     public void Init(FMLInitializationEvent evt)
     {
 		
-        CBlock = new nnsrBlockBase(CBlockID, Material.ground, "nanasora/cactus/sprites:CBlock", CBlockID, 1).setUnlocalizedName("CBlock").setHardness(0.5F).setResistance(10F).setCreativeTab(tabsCactus);
-        CStick = new nnsrItemBase(CStickID - 256, "stick", 0x228B22, 64, false).setUnlocalizedName("CStick").setCreativeTab(tabsCactus);
-        CSteak = new nnsrFoodBase(CSteakID - 256, 8, false, "porkchopCooked", 0x228B22, 64, false).setUnlocalizedName("CSteak").setCreativeTab(tabsCactus);
-        CSword = new nnsrSwordBase(CSwordID - 256, nnsrEnumHelper.ToolCactus, "nanasora/cactus/sprites:CSword", -1, false).setUnlocalizedName("CSword").setCreativeTab(tabsCactus);
-        CAxe = new nnsrAxeBase(CAxeID - 256, nnsrEnumHelper.ToolCactus, "nanasora/cactus/sprites:CAxe", -1, false).setUnlocalizedName("CAxe").setCreativeTab(tabsCactus);
-        CHoe = new nnsrHoeBase(CHoeID - 256, nnsrEnumHelper.ToolCactus, "nanasora/cactus/sprites:CHoe", -1, false).setUnlocalizedName("CHoe").setCreativeTab(tabsCactus);
-        CPickaxe = new nnsrPickaxeBase(CPickaxeID - 256, nnsrEnumHelper.ToolCactus, "nanasora/cactus/sprites:CPickaxe", -1, false).setUnlocalizedName("CPickaxe").setCreativeTab(tabsCactus);
-        CSpade = new nnsrSpadeBase(CSpadeID - 256, nnsrEnumHelper.ToolCactus, "nanasora/cactus/sprites:CSpade", -1, false).setUnlocalizedName("CSpade").setCreativeTab(tabsCactus);
-        CGel = new nnsrItemBase(CGelID - 256, "nanasora/cactus/sprites:CGel", -1, 64, false).setUnlocalizedName("CGel").setCreativeTab(tabsCactus);
-        CStraw = new nnsrItemBase(CStrawID - 256, "nanasora/cactus/sprites:CStraw", -1, 64, false).setUnlocalizedName("CStraw").setCreativeTab(tabsCactus);
-        CSkin = new nnsrItemBase(CSkinID - 256, "nanasora/cactus/sprites:CSkin", -1, 64, false).setUnlocalizedName("CSkin").setCreativeTab(tabsCactus);
-        Ceramic = new nnsrItemBase(CeramicID - 256, "ingotIron", 0xFFFFE0, 64, false).setUnlocalizedName("Ceramic").setCreativeTab(tabsCactus);
-        Receramic = new nnsrItemBase(ReceramicID - 256, "ingotIron", 0xAAD8E6, 64, false).setUnlocalizedName("Receramic").setCreativeTab(tabsCactus);
-        CeraSword = new nnsrSwordBase(CeraSwordID - 256, nnsrEnumHelper.ToolCeramic, "nanasora/cactus/sprites:CeraSword", -1, false).setUnlocalizedName("CeraSword").setCreativeTab(tabsCactus);
-        CeraAxe = new nnsrAxeBase(CeraAxeID - 256, nnsrEnumHelper.ToolCeramic, "nanasora/cactus/sprites:CeraAxe", -1, false).setUnlocalizedName("CeraAxe").setCreativeTab(tabsCactus);
-        CeraHoe = new nnsrHoeBase(CeraHoeID - 256, nnsrEnumHelper.ToolCeramic, "nanasora/cactus/sprites:CeraHoe", -1, false).setUnlocalizedName("CeraHoe").setCreativeTab(tabsCactus);
-        CeraPickaxe = new nnsrPickaxeBase(CeraPickaxeID - 256, nnsrEnumHelper.ToolCeramic, "nanasora/cactus/sprites:CeraPickaxe", -1, false).setUnlocalizedName("CeraPickaxe").setCreativeTab(tabsCactus);
-        CeraSpade = new nnsrSpadeBase(CeraSpadeID - 256, nnsrEnumHelper.ToolCeramic, "nanasora/cactus/sprites:CeraSpade", -1, false).setUnlocalizedName("CeraSpade").setCreativeTab(tabsCactus);
-        ReceraSword = new nnsrSwordBase(ReceraSwordID - 256, nnsrEnumHelper.ToolReceramic, "nanasora/cactus/sprites:ReceraSword", -1, false).setUnlocalizedName("ReceraSword").setCreativeTab(tabsCactus);
-        ReceraAxe = new nnsrAxeBase(ReceraAxeID - 256, nnsrEnumHelper.ToolReceramic, "nanasora/cactus/sprites:ReceraAxe", -1, false).setUnlocalizedName("ReceraAxe").setCreativeTab(tabsCactus);
-        ReceraHoe = new nnsrHoeBase(ReceraHoeID - 256, nnsrEnumHelper.ToolReceramic, "nanasora/cactus/sprites:ReceraHoe", -1, false).setUnlocalizedName("ReceraHoe").setCreativeTab(tabsCactus);
-        ReceraPickaxe = new nnsrPickaxeBase(ReceraPickaxeID - 256, nnsrEnumHelper.ToolReceramic, "nanasora/cactus/sprites:ReceraPickaxe", -1, false).setUnlocalizedName("ReceraPickaxe").setCreativeTab(tabsCactus);
-        ReceraSpade = new nnsrSpadeBase(ReceraSpadeID - 256, nnsrEnumHelper.ToolReceramic, "nanasora/cactus/sprites:ReceraSpade", -1, false).setUnlocalizedName("ReceraSpade").setCreativeTab(tabsCactus);
-        Jelly = new nnsrFoodBase(JellyID - 256, 6, false, "nanasora/cactus/sprites:Jelly", -1, 64, false).setUnlocalizedName("Jelly").setCreativeTab(tabsCactus);
-        CCoal = new nnsrItemBase(CCoalID - 256, "coal", 0x228B22, 64, false).setUnlocalizedName("CCoal").setCreativeTab(tabsCactus);
-        RCSteak = new nnsrFoodBase(RCSteakID - 256, 4, false, "porkchopRaw", 0x228B22, 64, false).setUnlocalizedName("RCSteak").setCreativeTab(tabsCactus);
-        Cactunium = new nnsrItemBase(CactuniumID - 256, "ingotIron", 0x228B22, 64, false).setUnlocalizedName("Cactunium").setCreativeTab(tabsCactus);
-        CNSword = new nnsrSwordBase(CNSwordID - 256, nnsrEnumHelper.ToolCactunium, "nanasora/cactus/sprites:CNSword", -1, false).setUnlocalizedName("CNSword").setCreativeTab(tabsCactus);
-        CNAxe = new nnsrAxeBase(CNAxeID - 256, nnsrEnumHelper.ToolCactunium, "nanasora/cactus/sprites:CNAxe", -1, false).setUnlocalizedName("CNAxe").setCreativeTab(tabsCactus);
-        CNHoe = new nnsrHoeBase(CNHoeID - 256, nnsrEnumHelper.ToolCactunium, "nanasora/cactus/sprites:CNHoe", -1, false).setUnlocalizedName("CNHoe").setCreativeTab(tabsCactus);
-        CNPickaxe = new nnsrPickaxeBase(CNPickaxeID - 256, nnsrEnumHelper.ToolCactunium, "nanasora/cactus/sprites:CNPickaxe", -1, false).setUnlocalizedName("CNPickaxe").setCreativeTab(tabsCactus);
-        CNSpade = new nnsrSpadeBase(CNSpadeID - 256, nnsrEnumHelper.ToolCactunium, "nanasora/cactus/sprites:CNSpade", -1, false).setUnlocalizedName("CNSpade").setCreativeTab(tabsCactus);
+        nnsrBlocks.CBlock = new nnsrBlockBase(CBlockID, Material.ground, "nanasora/cactus/sprites:CBlock", CBlockID, 1).setUnlocalizedName("CBlock").setHardness(0.5F).setResistance(10F).setCreativeTab(tabsCactus);
+        nnsrItems.CStick = new nnsrItemBase(CStickID - 256, "stick", 0x228B22, 64, false).setUnlocalizedName("CStick").setCreativeTab(tabsCactus);
+        nnsrItems.CSteak = new nnsrFoodBase(CSteakID - 256, 8, false, "porkchopCooked", 0x228B22, 64, false).setUnlocalizedName("CSteak").setCreativeTab(tabsCactus);
+        nnsrItems.CSword = new nnsrSwordBase(CSwordID - 256, nnsrEnumHelper.ToolCactus, "nanasora/cactus/sprites:CSword", -1, false).setUnlocalizedName("CSword").setCreativeTab(tabsCactus);
+        nnsrItems.CAxe = new nnsrAxeBase(CAxeID - 256, nnsrEnumHelper.ToolCactus, "nanasora/cactus/sprites:CAxe", -1, false).setUnlocalizedName("CAxe").setCreativeTab(tabsCactus);
+        nnsrItems.CHoe = new nnsrHoeBase(CHoeID - 256, nnsrEnumHelper.ToolCactus, "nanasora/cactus/sprites:CHoe", -1, false).setUnlocalizedName("CHoe").setCreativeTab(tabsCactus);
+        nnsrItems.CPickaxe = new nnsrPickaxeBase(CPickaxeID - 256, nnsrEnumHelper.ToolCactus, "nanasora/cactus/sprites:CPickaxe", -1, false).setUnlocalizedName("CPickaxe").setCreativeTab(tabsCactus);
+        nnsrItems.CSpade = new nnsrSpadeBase(CSpadeID - 256, nnsrEnumHelper.ToolCactus, "nanasora/cactus/sprites:CSpade", -1, false).setUnlocalizedName("CSpade").setCreativeTab(tabsCactus);
+        nnsrItems.CGel = new nnsrItemBase(CGelID - 256, "nanasora/cactus/sprites:CGel", -1, 64, false).setUnlocalizedName("CGel").setCreativeTab(tabsCactus);
+        nnsrItems.CStraw = new nnsrItemBase(CStrawID - 256, "nanasora/cactus/sprites:CStraw", -1, 64, false).setUnlocalizedName("CStraw").setCreativeTab(tabsCactus);
+        nnsrItems.CSkin = new nnsrItemBase(CSkinID - 256, "nanasora/cactus/sprites:CSkin", -1, 64, false).setUnlocalizedName("CSkin").setCreativeTab(tabsCactus);
+        nnsrItems.Ceramic = new nnsrItemBase(CeramicID - 256, "ingotIron", 0xFFFFE0, 64, false).setUnlocalizedName("Ceramic").setCreativeTab(tabsCactus);
+        nnsrItems.Receramic = new nnsrItemBase(ReceramicID - 256, "ingotIron", 0xAAD8E6, 64, false).setUnlocalizedName("Receramic").setCreativeTab(tabsCactus);
+        nnsrItems.CeraSword = new nnsrSwordBase(CeraSwordID - 256, nnsrEnumHelper.ToolCeramic, "nanasora/cactus/sprites:CeraSword", -1, false).setUnlocalizedName("CeraSword").setCreativeTab(tabsCactus);
+        nnsrItems.CeraAxe = new nnsrAxeBase(CeraAxeID - 256, nnsrEnumHelper.ToolCeramic, "nanasora/cactus/sprites:CeraAxe", -1, false).setUnlocalizedName("CeraAxe").setCreativeTab(tabsCactus);
+        nnsrItems.CeraHoe = new nnsrHoeBase(CeraHoeID - 256, nnsrEnumHelper.ToolCeramic, "nanasora/cactus/sprites:CeraHoe", -1, false).setUnlocalizedName("CeraHoe").setCreativeTab(tabsCactus);
+        nnsrItems.CeraPickaxe = new nnsrPickaxeBase(CeraPickaxeID - 256, nnsrEnumHelper.ToolCeramic, "nanasora/cactus/sprites:CeraPickaxe", -1, false).setUnlocalizedName("CeraPickaxe").setCreativeTab(tabsCactus);
+        nnsrItems.CeraSpade = new nnsrSpadeBase(CeraSpadeID - 256, nnsrEnumHelper.ToolCeramic, "nanasora/cactus/sprites:CeraSpade", -1, false).setUnlocalizedName("CeraSpade").setCreativeTab(tabsCactus);
+        nnsrItems.ReceraSword = new nnsrSwordBase(ReceraSwordID - 256, nnsrEnumHelper.ToolReceramic, "nanasora/cactus/sprites:ReceraSword", -1, false).setUnlocalizedName("ReceraSword").setCreativeTab(tabsCactus);
+        nnsrItems.ReceraAxe = new nnsrAxeBase(ReceraAxeID - 256, nnsrEnumHelper.ToolReceramic, "nanasora/cactus/sprites:ReceraAxe", -1, false).setUnlocalizedName("ReceraAxe").setCreativeTab(tabsCactus);
+        nnsrItems.ReceraHoe = new nnsrHoeBase(ReceraHoeID - 256, nnsrEnumHelper.ToolReceramic, "nanasora/cactus/sprites:ReceraHoe", -1, false).setUnlocalizedName("ReceraHoe").setCreativeTab(tabsCactus);
+        nnsrItems.ReceraPickaxe = new nnsrPickaxeBase(ReceraPickaxeID - 256, nnsrEnumHelper.ToolReceramic, "nanasora/cactus/sprites:ReceraPickaxe", -1, false).setUnlocalizedName("ReceraPickaxe").setCreativeTab(tabsCactus);
+        nnsrItems.ReceraSpade = new nnsrSpadeBase(ReceraSpadeID - 256, nnsrEnumHelper.ToolReceramic, "nanasora/cactus/sprites:ReceraSpade", -1, false).setUnlocalizedName("ReceraSpade").setCreativeTab(tabsCactus);
+        nnsrItems.Jelly = new nnsrFoodBase(JellyID - 256, 6, false, "nanasora/cactus/sprites:Jelly", -1, 64, false).setUnlocalizedName("Jelly").setCreativeTab(tabsCactus);
+        nnsrItems.CCoal = new nnsrItemBase(CCoalID - 256, "coal", 0x228B22, 64, false).setUnlocalizedName("CCoal").setCreativeTab(tabsCactus);
+        nnsrItems.RCSteak = new nnsrFoodBase(RCSteakID - 256, 4, false, "porkchopRaw", 0x228B22, 64, false).setUnlocalizedName("RCSteak").setCreativeTab(tabsCactus);
+        nnsrItems.Cactunium = new nnsrItemBase(CactuniumID - 256, "ingotIron", 0x228B22, 64, false).setUnlocalizedName("Cactunium").setCreativeTab(tabsCactus);
+        nnsrItems.CNSword = new nnsrSwordBase(CNSwordID - 256, nnsrEnumHelper.ToolCactunium, "nanasora/cactus/sprites:CNSword", -1, false).setUnlocalizedName("CNSword").setCreativeTab(tabsCactus);
+        nnsrItems.CNAxe = new nnsrAxeBase(CNAxeID - 256, nnsrEnumHelper.ToolCactunium, "nanasora/cactus/sprites:CNAxe", -1, false).setUnlocalizedName("CNAxe").setCreativeTab(tabsCactus);
+        nnsrItems.CNHoe = new nnsrHoeBase(CNHoeID - 256, nnsrEnumHelper.ToolCactunium, "nanasora/cactus/sprites:CNHoe", -1, false).setUnlocalizedName("CNHoe").setCreativeTab(tabsCactus);
+        nnsrItems.CNPickaxe = new nnsrPickaxeBase(CNPickaxeID - 256, nnsrEnumHelper.ToolCactunium, "nanasora/cactus/sprites:CNPickaxe", -1, false).setUnlocalizedName("CNPickaxe").setCreativeTab(tabsCactus);
+        nnsrItems.CNSpade = new nnsrSpadeBase(CNSpadeID - 256, nnsrEnumHelper.ToolCactunium, "nanasora/cactus/sprites:CNSpade", -1, false).setUnlocalizedName("CNSpade").setCreativeTab(tabsCactus);
         
-        GameRegistry.registerBlock(CBlock, "CBlock");
+        GameRegistry.registerBlock(nnsrBlocks.CBlock, "CBlock");
         
-        OreDictionary.registerOre("dropUranium", new ItemStack(Cactunium, 1, 0));
+        OreDictionary.registerOre("dropUranium", new ItemStack(nnsrItems.Cactunium, 1, 0));
         
         
         MinecraftForge.setBlockHarvestLevel(Block.cactus, "axe", 0);
-        MinecraftForge.setBlockHarvestLevel(CBlock, "axe", 0);
+        MinecraftForge.setBlockHarvestLevel(nnsrBlocks.CBlock, "axe", 0);
         
-        MinecraftForge.setToolClass(CAxe, "axe", 1);
-        MinecraftForge.setToolClass(CPickaxe, "pickaxe", 1);
-        MinecraftForge.setToolClass(CSpade, "shovel", 1);
-        MinecraftForge.setToolClass(CeraAxe, "axe", 2);
-        MinecraftForge.setToolClass(CeraPickaxe, "pickaxe", 2);
-        MinecraftForge.setToolClass(CeraSpade, "shovel", 2);
-        MinecraftForge.setToolClass(ReceraAxe, "axe", 3);
-        MinecraftForge.setToolClass(ReceraPickaxe, "pickaxe", 3);
-        MinecraftForge.setToolClass(ReceraSpade, "shovel", 3);
-        MinecraftForge.setToolClass(CNAxe, "axe", 4);
-        MinecraftForge.setToolClass(CNPickaxe, "pickaxe", 4);
-        MinecraftForge.setToolClass(CNSpade, "spade", 4);
+        MinecraftForge.setToolClass(nnsrItems.CAxe, "axe", 1);
+        MinecraftForge.setToolClass(nnsrItems.CPickaxe, "pickaxe", 1);
+        MinecraftForge.setToolClass(nnsrItems.CSpade, "shovel", 1);
+        MinecraftForge.setToolClass(nnsrItems.CeraAxe, "axe", 2);
+        MinecraftForge.setToolClass(nnsrItems.CeraPickaxe, "pickaxe", 2);
+        MinecraftForge.setToolClass(nnsrItems.CeraSpade, "shovel", 2);
+        MinecraftForge.setToolClass(nnsrItems.ReceraAxe, "axe", 3);
+        MinecraftForge.setToolClass(nnsrItems.ReceraPickaxe, "pickaxe", 3);
+        MinecraftForge.setToolClass(nnsrItems.ReceraSpade, "shovel", 3);
+        MinecraftForge.setToolClass(nnsrItems.CNAxe, "axe", 4);
+        MinecraftForge.setToolClass(nnsrItems.CNPickaxe, "pickaxe", 4);
+        MinecraftForge.setToolClass(nnsrItems.CNSpade, "spade", 4);
         
-        nnsrLocalize.addName(CBlock, "Cactus Block", "サボテンブロック");
-        nnsrLocalize.addName(CStick, "Cactus Stick", "サボテンスティック");
-        nnsrLocalize.addName(CSword, "Cactus Sword", "サボテンソード");
-        nnsrLocalize.addName(CAxe, "Cactus Axe", "サボテンの斧");
-        nnsrLocalize.addName(CHoe, "Cactus Hoe", "サボテンのクワ");
-        nnsrLocalize.addName(CPickaxe, "Cactus Pickaxe", "サボテンのツルハシ");
-        nnsrLocalize.addName(CSpade, "Cactus Shovel", "サボテンのシャベル");
-        nnsrLocalize.addName(CSteak, "Cactus Steak", "サボテンステーキ");
-        nnsrLocalize.addName(CGel, "Gel", "サボテンのゲル");
-        nnsrLocalize.addName(CStraw, "Straw", "サボテンのストロー");
-        nnsrLocalize.addName(CSkin, "Cactus Skin", "サボテンの皮");
-        nnsrLocalize.addName(Ceramic, "Ceramics", "セラミックインゴット");
-        nnsrLocalize.addName(Receramic, "Refined Ceramics", "製錬セラミックインゴット");
-        nnsrLocalize.addName(CeraSword, "Ceramic Sword", "セラミックの剣");
-        nnsrLocalize.addName(CeraAxe, "Ceramic Axe", "セラミックの斧");
-        nnsrLocalize.addName(CeraHoe, "Ceramic Hoe", "セラミックのクワ");
-        nnsrLocalize.addName(CeraPickaxe, "Ceramic Pickaxe", "セラミックのツルハシ");
-        nnsrLocalize.addName(CeraSpade, "Ceramic Shovel", "セラミックのシャベル");
-        nnsrLocalize.addName(ReceraSword, "Re-Ceramic Sword", "製錬セラミックの剣");
-        nnsrLocalize.addName(ReceraAxe, "Re-Ceramic Axe", "製錬セラミックの斧");
-        nnsrLocalize.addName(ReceraHoe, "Re-Ceramic Hoe", "製錬セラミックのクワ");
-        nnsrLocalize.addName(ReceraPickaxe, "Re-Ceramic Pickaxe", "製錬セラミックのツルハシ");
-        nnsrLocalize.addName(ReceraSpade, "Re-Ceramic Shovel", "製錬セラミックのシャベル");
-        nnsrLocalize.addName(Jelly, "Jelly", "ゼリー");
-        nnsrLocalize.addName(RCSteak, "Raw Cactus Steak", "生のサボテンステーキ");
-        nnsrLocalize.addName(CCoal, "Cactus Coal", "サボ炭");
-        nnsrLocalize.addName(Cactunium, "Cactunium Ingot", "カクタニウムインゴット");
-        nnsrLocalize.addName(CNSword, "Cactunium Sword", "カクタニウムソード");
-        nnsrLocalize.addName(CNAxe, "Cactunium Axe", "カクタニウムアックス");
-        nnsrLocalize.addName(CNHoe, "Cactunium Hoe", "カクタニウムクワ");
-        nnsrLocalize.addName(CNPickaxe, "Cactunium Pickaxe", "カクタニウムピックアックス");
-        nnsrLocalize.addName(CNSpade, "Cactunium Shovel", "カクタニウムシャベル");
+        nnsrLocalize.addName(nnsrBlocks.CBlock, "Cactus Block", "サボテンブロック");
+        nnsrLocalize.addName(nnsrItems.CStick, "Cactus Stick", "サボテンスティック");
+        nnsrLocalize.addName(nnsrItems.CSword, "Cactus Sword", "サボテンソード");
+        nnsrLocalize.addName(nnsrItems.CAxe, "Cactus Axe", "サボテンの斧");
+        nnsrLocalize.addName(nnsrItems.CHoe, "Cactus Hoe", "サボテンのクワ");
+        nnsrLocalize.addName(nnsrItems.CPickaxe, "Cactus Pickaxe", "サボテンのツルハシ");
+        nnsrLocalize.addName(nnsrItems.CSpade, "Cactus Shovel", "サボテンのシャベル");
+        nnsrLocalize.addName(nnsrItems.CSteak, "Cactus Steak", "サボテンステーキ");
+        nnsrLocalize.addName(nnsrItems.CGel, "Gel", "サボテンのゲル");
+        nnsrLocalize.addName(nnsrItems.CStraw, "Straw", "サボテンのストロー");
+        nnsrLocalize.addName(nnsrItems.CSkin, "Cactus Skin", "サボテンの皮");
+        nnsrLocalize.addName(nnsrItems.Ceramic, "Ceramics", "セラミックインゴット");
+        nnsrLocalize.addName(nnsrItems.Receramic, "Refined Ceramics", "製錬セラミックインゴット");
+        nnsrLocalize.addName(nnsrItems.CeraSword, "Ceramic Sword", "セラミックの剣");
+        nnsrLocalize.addName(nnsrItems.CeraAxe, "Ceramic Axe", "セラミックの斧");
+        nnsrLocalize.addName(nnsrItems.CeraHoe, "Ceramic Hoe", "セラミックのクワ");
+        nnsrLocalize.addName(nnsrItems.CeraPickaxe, "Ceramic Pickaxe", "セラミックのツルハシ");
+        nnsrLocalize.addName(nnsrItems.CeraSpade, "Ceramic Shovel", "セラミックのシャベル");
+        nnsrLocalize.addName(nnsrItems.ReceraSword, "Re-Ceramic Sword", "製錬セラミックの剣");
+        nnsrLocalize.addName(nnsrItems.ReceraAxe, "Re-Ceramic Axe", "製錬セラミックの斧");
+        nnsrLocalize.addName(nnsrItems.ReceraHoe, "Re-Ceramic Hoe", "製錬セラミックのクワ");
+        nnsrLocalize.addName(nnsrItems.ReceraPickaxe, "Re-Ceramic Pickaxe", "製錬セラミックのツルハシ");
+        nnsrLocalize.addName(nnsrItems.ReceraSpade, "Re-Ceramic Shovel", "製錬セラミックのシャベル");
+        nnsrLocalize.addName(nnsrItems.Jelly, "Jelly", "ゼリー");
+        nnsrLocalize.addName(nnsrItems.RCSteak, "Raw Cactus Steak", "生のサボテンステーキ");
+        nnsrLocalize.addName(nnsrItems.CCoal, "Cactus Coal", "サボ炭");
+        nnsrLocalize.addName(nnsrItems.Cactunium, "Cactunium Ingot", "カクタニウムインゴット");
+        nnsrLocalize.addName(nnsrItems.CNSword, "Cactunium Sword", "カクタニウムソード");
+        nnsrLocalize.addName(nnsrItems.CNAxe, "Cactunium Axe", "カクタニウムアックス");
+        nnsrLocalize.addName(nnsrItems.CNHoe, "Cactunium Hoe", "カクタニウムクワ");
+        nnsrLocalize.addName(nnsrItems.CNPickaxe, "Cactunium Pickaxe", "カクタニウムピックアックス");
+        nnsrLocalize.addName(nnsrItems.CNSpade, "Cactunium Shovel", "カクタニウムシャベル");
         
         GameRegistry.addRecipe(new ItemStack(Block.cactus, 4),
         		new Object[] { "XXX", "XSX", "XXX",
@@ -281,122 +247,122 @@ public class Cactus {
                 			});
         GameRegistry.addRecipe(new ItemStack(Block.dirt, 1),
                 new Object[] { "#X#",
-                        '#', CGel,
+                        '#', nnsrItems.CGel,
                         'X', Block.sand
                              });
         GameRegistry.addRecipe(new ItemStack(Block.grass, 1),
                 new Object[] { "###", "#X#", "###",
-                        '#', CGel,
+                        '#', nnsrItems.CGel,
                         'X', Block.dirt
                              });
         GameRegistry.addRecipe(new ItemStack(Block.workbench, 1),
                 new Object[] { "XX", "##",
-                        'X', CSkin,
+                        'X', nnsrItems.CSkin,
                         '#', Block.cactus
                              });
-        GameRegistry.addRecipe(new ItemStack(CBlock, 1),
+        GameRegistry.addRecipe(new ItemStack(nnsrBlocks.CBlock, 1),
                 new Object[] { "XX", "XX",
                         'X', Block.cactus
                              });
         GameRegistry.addRecipe(new ItemStack(Block.cactus, 4),
                 new Object[] { "#",
-                        '#', CBlock
+                        '#', nnsrBlocks.CBlock
                              });
-        GameRegistry.addRecipe(new ItemStack(CStick, 4),
+        GameRegistry.addRecipe(new ItemStack(nnsrItems.CStick, 4),
                 new Object[] { "#", "#",
                         '#', Block.cactus
                              });
-        GameRegistry.addRecipe(new ItemStack(CSkin, 4),
+        GameRegistry.addRecipe(new ItemStack(nnsrItems.CSkin, 4),
                 new Object[] { "#",
                         '#', Block.cactus
                              });
-        GameRegistry.addRecipe(new ItemStack(CStraw, 4),
+        GameRegistry.addRecipe(new ItemStack(nnsrItems.CStraw, 4),
                 new Object[] { "#", "#",
-                        '#', CStick
+                        '#', nnsrItems.CStick
                              });
-        GameRegistry.addRecipe(new ItemStack(CGel, 2),
+        GameRegistry.addRecipe(new ItemStack(nnsrItems.CGel, 2),
                 new Object[] { "X", "#",
                         '#', Block.cactus,
-                        'X', CStraw
+                        'X', nnsrItems.CStraw
                              });
-        GameRegistry.addRecipe(new ItemStack(Jelly, 1),
+        GameRegistry.addRecipe(new ItemStack(nnsrItems.Jelly, 1),
                 new Object[] { "X", "Y",
                         'X', Item.sugar,
-                        'Y', CGel
+                        'Y', nnsrItems.CGel
                              });
         GameRegistry.addRecipe(new ItemStack(Item.bucketEmpty, 1),
                 new Object[] {"X X", " X ",
-                        'X', Receramic
+                        'X', nnsrItems.Receramic
                              });
         GameRegistry.addRecipe(new ItemStack(Block.chest, 1),
                 new Object[] { "XXX", "Y Y", "YYY",
-                        'X', CSkin,
+                        'X', nnsrItems.CSkin,
                         'Y', Block.cactus
                              });
         GameRegistry.addRecipe(new ItemStack(Block.torchWood, 4),
                 new Object[] { "#", "S",
                         '#', new ItemStack(Item.coal, 1, 0),
-                        'S', CStick
+                        'S', nnsrItems.CStick
                              });
         GameRegistry.addRecipe(new ItemStack(Block.torchWood, 4),
                 new Object[] { "#", "S",
                         '#', new ItemStack(Item.coal, 1, 1),
-                        'S', CStick
+                        'S', nnsrItems.CStick
                              });
-        GameRegistry.addRecipe(new ItemStack(RCSteak, 3),
+        GameRegistry.addRecipe(new ItemStack(nnsrItems.RCSteak, 3),
                 new Object[] { "XXX",
                         'X', Block.cactus
                              });
         GameRegistry.addRecipe(new ItemStack(Block.torchWood, 4),
                 new Object[] { "#", "S",
-                        '#', CCoal,
-                        'S', CStick
+                        '#', nnsrItems.CCoal,
+                        'S', nnsrItems.CStick
                              });
         GameRegistry.addRecipe(new ItemStack(Block.torchWood, 4),
                 new Object[] { "#", "S",
-                        '#', CCoal,
-                        'S', CStick
+                        '#', nnsrItems.CCoal,
+                        'S', nnsrItems.CStick
                              });
-        GameRegistry.addRecipe(new ItemStack(CNSword),
+        GameRegistry.addRecipe(new ItemStack(nnsrItems.CNSword),
         		new Object[]{ "C", "C", "X",
-        				'C', Cactunium,
-        				'X', CSword,
+        				'C', nnsrItems.Cactunium,
+        				'X', nnsrItems.CSword,
         					});
-        GameRegistry.addRecipe(new ItemStack(CNAxe),
+        GameRegistry.addRecipe(new ItemStack(nnsrItems.CNAxe),
         		new Object[]{ "CC", "CX", " S",
-        				'C', Cactunium,
-        				'X', CAxe,
-        				'S', CStick
+        				'C', nnsrItems.Cactunium,
+        				'X', nnsrItems.CAxe,
+        				'S', nnsrItems.CStick
         					});
-        GameRegistry.addRecipe(new ItemStack(CNHoe),
+        GameRegistry.addRecipe(new ItemStack(nnsrItems.CNHoe),
         		new Object[]{ "CC", " X", " S",
-        				'C', Cactunium,
-        				'X', CHoe,
-        				'S', CStick
+        				'C', nnsrItems.Cactunium,
+        				'X', nnsrItems.CHoe,
+        				'S', nnsrItems.CStick
         					});
-        GameRegistry.addRecipe(new ItemStack(CNPickaxe),
+        GameRegistry.addRecipe(new ItemStack(nnsrItems.CNPickaxe),
         		new Object[]{ "CCC", " X ", " S ",
-        				'C', Cactunium,
-        				'X', CPickaxe,
-        				'S', CStick
+        				'C', nnsrItems.Cactunium,
+        				'X', nnsrItems.CPickaxe,
+        				'S', nnsrItems.CStick
         					});
-        GameRegistry.addRecipe(new ItemStack(CNSpade),
+        GameRegistry.addRecipe(new ItemStack(nnsrItems.CNSpade),
         		new Object[]{ "C", "X", "S",
-        				'C', Cactunium,
-        				'X', CSpade,
-        				'S', CStick
+        				'C', nnsrItems.Cactunium,
+        				'X', nnsrItems.CSpade,
+        				'S', nnsrItems.CStick
         					});
         
-        GameRegistry.addSmelting(RCSteak.itemID, new ItemStack(CSteak, 1), 0.3F);
-        GameRegistry.addSmelting(CStick.itemID, new ItemStack(Item.stick, 1), 0.1F);
-        GameRegistry.addSmelting(CSkin.itemID, new ItemStack(CCoal, 1), 0.1F);
-        GameRegistry.addSmelting(Block.sandStone.blockID, new ItemStack(Ceramic, 1), 0.7F);
-        GameRegistry.addSmelting(Ceramic.itemID, new ItemStack(Receramic, 1), 0.9F);
-        GameRegistry.addSmelting(CBlock.blockID, new ItemStack(Cactunium, 1), 1.0F);
+        GameRegistry.addSmelting(nnsrItems.RCSteak.itemID, new ItemStack(nnsrItems.CSteak, 1), 0.3F);
+        GameRegistry.addSmelting(nnsrItems.CStick.itemID, new ItemStack(Item.stick, 1), 0.1F);
+        GameRegistry.addSmelting(nnsrItems.CSkin.itemID, new ItemStack(nnsrItems.CCoal, 1), 0.1F);
+        GameRegistry.addSmelting(Block.sandStone.blockID, new ItemStack(nnsrItems.Ceramic, 1), 0.7F);
+        GameRegistry.addSmelting(nnsrItems.Ceramic.itemID, new ItemStack(nnsrItems.Receramic, 1), 0.9F);
+        GameRegistry.addSmelting(nnsrBlocks.CBlock.blockID, new ItemStack(nnsrItems.Cactunium, 1), 1.0F);
         
-        nnsrRecipe.addToolRecipe(CSword, CAxe, CHoe, CPickaxe, CSpade, Block.cactus, CStick);
-        nnsrRecipe.addToolRecipe(CeraSword, CeraAxe, CeraHoe, CeraPickaxe, CeraSpade, Ceramic, Item.stick);
-        nnsrRecipe.addToolRecipe(ReceraSword, ReceraAxe, ReceraHoe, ReceraPickaxe, ReceraSpade, Receramic, Item.stick);
+        nnsrRecipe.addToolRecipe(nnsrItems.CSword, nnsrItems.CAxe, nnsrItems.CHoe, nnsrItems.CPickaxe, nnsrItems.CSpade, Block.cactus, nnsrItems.CStick);
+        nnsrRecipe.addToolRecipe(nnsrItems.CeraSword, nnsrItems.CeraAxe, nnsrItems.CeraHoe, nnsrItems.CeraPickaxe, nnsrItems.CeraSpade, nnsrItems.Ceramic, Item.stick);
+        nnsrRecipe.addToolRecipe(nnsrItems.ReceraSword, nnsrItems.ReceraAxe, nnsrItems.ReceraHoe, nnsrItems.ReceraPickaxe, nnsrItems.ReceraSpade, nnsrItems.Receramic, Item.stick);
         
         GameRegistry.registerFuelHandler(new FuelTime());
     }
