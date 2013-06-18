@@ -1,6 +1,6 @@
-package mods.nanasora.cactus.common;
+package mods.nnsr.cactus.common;
 
-import mods.nanasora.nnslib.util.nnsrItems;
+import mods.nnsr.nnslib.util.nnsrItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.IFuelHandler;

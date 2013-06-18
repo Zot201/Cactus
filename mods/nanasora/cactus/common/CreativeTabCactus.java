@@ -1,4 +1,4 @@
-package mods.nanasora.cactus.common;
+package mods.nnsr.cactus.common;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
