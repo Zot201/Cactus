@@ -26,6 +26,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemMultiTextureTile;
 import net.minecraft.item.ItemSlab;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraftforge.common.Configuration;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.Property;
@@ -37,8 +38,18 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-@Mod(modid = "Cactus!!+", name = "Cactus!!+", version = "1.2.2")
-@NetworkMod(clientSideRequired = true, serverSideRequired = false)
+@Mod(
+		modid = "Cactus!!+",
+		name = "Cactus!!+", 
+		version = "1.2.2", 
+		dependencies="required-after:nnsLib"
+)
+
+@NetworkMod(
+		clientSideRequired = true,
+		serverSideRequired = false
+)
+
 public class Cactus {
 	
 	public static final CreativeTabs tabsCactus = new CreativeTabCactus("Cactus!!+");
@@ -472,7 +483,7 @@ public class Cactus {
         GameRegistry.addSmelting(nnsrItems.CSkin.itemID, new ItemStack(nnsrItems.CCoal, 1), 0.1F);
         GameRegistry.addSmelting(Block.sandStone.blockID, new ItemStack(nnsrItems.Ceramic, 1), 0.7F);
         GameRegistry.addSmelting(nnsrItems.Ceramic.itemID, new ItemStack(nnsrItems.Receramic, 1), 0.9F);
-        GameRegistry.addSmelting(new ItemStack(nnsrBlocks.CBlock, 1, 0).itemID, new ItemStack(nnsrItems.Cactunium, 1), 1.0F);
+        FurnaceRecipes.smelting().addSmelting(nnsrBlocks.CBlock.blockID, 0, new ItemStack(nnsrItems.Cactunium, 1), 1.0F);
         
         nnsrRecipe.addToolRecipe(nnsrItems.CSword, nnsrItems.CAxe, nnsrItems.CHoe, nnsrItems.CPickaxe, nnsrItems.CSpade, Block.cactus, nnsrItems.CStick);
         nnsrRecipe.addToolRecipe(nnsrItems.CeraSword, nnsrItems.CeraAxe, nnsrItems.CeraHoe, nnsrItems.CeraPickaxe, nnsrItems.CeraSpade, nnsrItems.Ceramic, Item.stick);
