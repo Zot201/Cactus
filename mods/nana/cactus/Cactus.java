@@ -243,11 +243,11 @@ public class Cactus {
 		OreDictionary.registerOre("stickCactus", getCactusItem("CStick"));
 		OreDictionary.registerOre("cactusRod", getCactusItem("CStick"));
 		OreDictionary.registerOre("skinCactus", getCactusItem("CSkin"));
-		OreDictionary.registerOre("ingotCeramic", getCactusItem("ingotCeramic"));
-		OreDictionary.registerOre("ingotReceramic", getCactusItem("ingotReceramic"));
+		OreDictionary.registerOre("ingotCeramic", getCactusItem("Ceramic"));
+		OreDictionary.registerOre("ingotReceramic", getCactusItem("Receramic"));
 		OreDictionary.registerOre("coalCactus", getCactusItem("CCoal"));
-		OreDictionary.registerOre("ingotCactusium", getCactusItem("ingotCactusium"));
-		OreDictionary.registerOre("ingotCactusium", getCactusItem("ingotCactus"));
+		OreDictionary.registerOre("ingotCactusium", getCactusItem("Cactusium"));
+		OreDictionary.registerOre("ingotCactus", getCactusItem("Cactusium"));
 		OreDictionary.registerOre("fleshCactus", getCactusItem("RCSteak"));
 
 		addLocalization("itemGroup.Cactus", "Cactus++", "Cactus++");
