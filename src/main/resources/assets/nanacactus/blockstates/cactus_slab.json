@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom,variant=cactus": { "model": "nanacactus:half_slab_cactus" },
+    "half=top,variant=cactus": { "model": "nanacactus:upper_slab_cactus" }
+  }
+}

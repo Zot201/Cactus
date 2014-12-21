@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "variant=cactus": { "model": "nanacactus:cactus_block" }
+  }
+}

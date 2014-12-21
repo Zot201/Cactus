@@ -1,0 +1,9 @@
+[{
+  "modid": "nanacactus",
+  "name": "Cactus++",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://forum.minecraftuser.jp/viewtopic.php?f=13&t=4582",
+  "credits": "By nanasora",
+  "authorList": ["nanasora"]
+}]

@@ -1,0 +1,6 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "nanacactus:blocks/cactus_block"
+  }
+}

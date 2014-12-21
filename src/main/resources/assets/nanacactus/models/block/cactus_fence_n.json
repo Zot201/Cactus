@@ -1,0 +1,6 @@
+{
+  "parent": "block/fence_n",
+  "textures": {
+    "texture": "nanacactus:blocks/cactus_block"
+  }
+}

@@ -1,0 +1,56 @@
+buildscript {
+  repositories {
+    mavenCentral()
+    maven {
+      name = "forge"
+      url = "http://files.minecraftforge.net/maven"
+    }
+    maven {
+      name = "sonatype"
+      url = "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
+  }
+  dependencies {
+    classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+  }
+}
+
+apply plugin: 'forge'
+
+version = "1.1.0-1.8"
+group = "mods.nanacactus"
+archivesBaseName = "Cactus++-port"
+
+minecraft {
+  version = "1.8-11.14.0.1273-1.8"
+  runDir = "eclipse"
+  
+  mappings = "snapshot_nodoc_20141130"
+}
+
+processResources {
+  inputs.property "version", project.version
+  inputs.property "mcversion", project.minecraft.version
+  
+  from(sourceSets.main.resources.srcDirs) {
+    include 'mcmod.info'
+    expand 'version':project.version, 'mcversion':project.minecraft.version
+  }
+  
+  from(sourceSets.main.resources.srcDirs) {
+    exclude 'mcmod.info'
+  }
+}
+
+sourceSets {
+  dummy {
+    java {
+      srcDir 'src/dummy/java'
+    }
+  }
+  main {
+    java {
+      compileClasspath += dummy.output
+    }
+  }
+}

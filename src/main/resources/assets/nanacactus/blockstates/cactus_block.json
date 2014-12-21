@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "variant=cactus": { "model": "nanacactus:cactus_block" },
+    "variant=ceramic": { "model": "nanacactus:ceramic_block" },
+    "variant=receramic": { "model": "nanacactus:receramic_block" },
+    "variant=cactusium": { "model": "nanacactus:cactusium_block" }
+  }
+}
